@@ -8,7 +8,7 @@ namespace GameStore.WebUI.Models.Entities
 {
     public class ShippingDetails
     {
-        [Required(ErrorMessage ="укажите имя")]
+        [Required(ErrorMessage ="Укажите имя")]
         [Display(Name="Имя")]
         public string Name { get; set; }
 
