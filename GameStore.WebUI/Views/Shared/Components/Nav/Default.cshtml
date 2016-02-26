@@ -1,0 +1,22 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model IEnumerable<string> 
+
+<a asp-action="List" asp-controller="Game" class="btn btn-block btn-default btn-lg">Домой</a>
+
+@foreach (var link in Model)
+{
+
+    var className = link == ViewBag.SelectedCategory ? " btn-primary" : "";
+
+      
+    <a asp-action ="List" 
+       asp-controller="Game" 
+       asp-route-category="@link" 
+       asp-route-page="1"
+       class="btn btn-block btn-default btn-lg @(className)">
+        @link
+        </a>
+
+}

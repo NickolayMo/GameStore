@@ -1,0 +1,19 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model GameStore.WebUI.Models.Entities.Cart
+
+<div class="navbar-right">
+    <a asp-action="Index" 
+       asp-controller="Cart" 
+       asp-route-returnUrl="@ViewContext.HttpContext.Request.Path"
+       class="btn btn-default navbar-btn">
+        Заказать
+    </a>
+</div>
+<div class="navbar-text navbar-right">
+    <b>Ваша корзина</b>
+    @Model.Lines.Sum(x=>x.Quantity) игр
+    @Model.ComputeTotalValue().ToString("# руб")
+
+</div>

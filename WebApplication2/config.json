@@ -1,0 +1,51 @@
+{
+  "AppSettings": {
+    "SiteShortTitle": "Boilerplate",
+    "SiteTitle": "ASP.NET MVC Boilerplate"
+  },
+  "Logging": {
+    "IncludeScopes": true,
+    "LogLevel": {
+      "Default": "Verbose",
+      "System": "Information",
+      "Microsoft": "Information"
+    }
+  },
+  "SitemapSettings": {
+    "SitemapPingLocations": [
+      "https://www.google.com/ping?sitemap=",
+      "http://www.bing.com/ping?sitemap="
+    ]
+  },
+  "CacheProfileSettings": {
+    "CacheProfiles": {
+      "BrowserConfigXml": {
+        "Duration": 86400,
+        "Location": "Any"
+      },
+      "Error": {
+        "Duration": 86400,
+        "Location": "Any"
+      },
+      "Feed": {
+        "Duration": 86400,
+        "Location": "Any"
+      },
+      "ManifestJson": {
+        "Duration": 86400,
+        "Location": "Any"
+      },
+      "OpenSearchXml": {
+        "Duration": 86400,
+        "Location": "Any"
+      },
+      "RobotsText": {
+        "Duration": 86400,
+        "Location": "Any"
+      },
+      "SitemapNodes": {
+        "Duration": 86400
+      }
+    }
+  }
+}

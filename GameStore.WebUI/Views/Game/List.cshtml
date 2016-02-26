@@ -1,0 +1,20 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using GameStore.WebUI.ModelViews
+
+
+@model GamesListViewModel
+@{
+    ViewBag.Title = "Товары";
+}
+@foreach (var p in @Model.Games)
+{
+    @Html.Partial("GameSummaryPartial", p);
+
+}
+<pager paging-info="@Model.PagingInfo" uri="@Url" model="@Model" class="btn-group pull-right"></pager>
+

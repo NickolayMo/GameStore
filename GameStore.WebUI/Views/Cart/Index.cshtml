@@ -1,0 +1,60 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model GameStore.WebUI.ModelViews.CartIndexViewModel
+@{
+
+    ViewBag.Title = "GameStore:Ваща корзина";
+}
+<h2>
+    Ваша корзина
+</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Кол-во</th>
+            <th>Игра</th>
+            <th class="text-right">Цена</th>
+            <th class="text-right">Общая цена</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var line in Model.Cart.Lines)
+        {
+            string price = line.Game.Price.ToString("# руб");
+            string totalPice = (line.Quantity * line.Game.Price).ToString("# руб");
+            <tr>
+                <td class="text-center">@line.Quantity</td>
+                <td class="text-left">@line.Game.Name</td>
+                <td class="text-right">@price</td>
+                <td class="text-center">@totalPice</td>
+                <td>
+                    <form asp-action="RemoveFromCart" asp-controller="Cart">
+                        <input type="hidden" name="GameId" value="@line.Game.GameId"/>
+                        <input type="hidden" asp-for="ReturnUrl" />
+                        <input type="submit" class="btn btn-sm btn-warning" value="Удалить"/>
+
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3" class="text-right">Итого:</td>
+            <td class="text-right">
+                @Model.Cart.ComputeTotalValue().ToString("# руб")
+            </td>
+        </tr>
+    </tfoot>
+</table>
+
+<div class="text-center">
+    <a class="btn btn-primary" href="@Model.ReturnUrl">Продолжить покупки</a>
+    <a asp-action="Checkout" asp-controller="Cart" class="btn btn-primary">Оформить заказ</a>
+</div>
+

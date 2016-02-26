@@ -1,0 +1,23 @@
+{
+  "version": "1.0.0-*",
+  "description": "GameStore.Test Class Library",
+  "authors": [
+    "Николай"
+  ],
+  "tags": [
+    ""
+  ],
+  "projectUrl": "",
+  "licenseUrl": "",
+  "dependencies": {
+    "GameStore.Test": "1.0.0"
+  },
+  "commands": {
+    "test": "xunit.runner.dnx"
+  },
+  "frameworks": {
+    "dnx451": {}
+  },
+  "entryPoint": "GameStore.Test",
+  "loadable": false
+}

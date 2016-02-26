@@ -1,0 +1,21 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@using GameStore.WebUI.Models.Entities
+@model Game
+<div class="well">
+    <h3>
+        <strong>@Model.Name</strong>
+        <span class="pull-right label label-primary">@Model.Price.ToString("# руб")</span>
+    </h3>
+    <form asp-controller="Cart" asp-action="AddToCart">
+        <div class="pull-right">
+            <input type="hidden" asp-for="GameId" />
+            <input type="hidden" name="returnUrl" value="@ViewContext.HttpContext.Request.Path" />
+            <input type="submit" class="btn btn-success" value="Добавить в корзину" />
+
+        </div>
+
+    </form>
+    <span class="lead">@Model.Description</span>
+</div>

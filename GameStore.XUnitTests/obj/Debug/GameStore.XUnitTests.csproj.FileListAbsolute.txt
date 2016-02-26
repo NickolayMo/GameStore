@@ -1,0 +1,15 @@
+C:\Users\Николай\documents\visual studio 2015\Projects\GameStore\GameStore.XUnitTests\bin\Debug\xunit.abstractions.dll
+C:\Users\Николай\documents\visual studio 2015\Projects\GameStore\GameStore.XUnitTests\bin\Debug\xunit.runner.visualstudio.testadapter.dll
+C:\Users\Николай\documents\visual studio 2015\Projects\GameStore\GameStore.XUnitTests\bin\Debug\xunit.runner.utility.desktop.dll
+C:\Users\Николай\documents\visual studio 2015\Projects\GameStore\GameStore.XUnitTests\bin\Debug\xunit.execution.desktop.dll
+C:\Users\Николай\documents\visual studio 2015\Projects\GameStore\GameStore.XUnitTests\bin\Debug\GameStore.XUnitTests.dll
+C:\Users\Николай\documents\visual studio 2015\Projects\GameStore\GameStore.XUnitTests\bin\Debug\GameStore.XUnitTests.pdb
+C:\Users\Николай\documents\visual studio 2015\Projects\GameStore\GameStore.XUnitTests\bin\Debug\xunit.assert.dll
+C:\Users\Николай\documents\visual studio 2015\Projects\GameStore\GameStore.XUnitTests\bin\Debug\xunit.core.dll
+C:\Users\Николай\documents\visual studio 2015\Projects\GameStore\GameStore.XUnitTests\bin\Debug\xunit.assert.pdb
+C:\Users\Николай\documents\visual studio 2015\Projects\GameStore\GameStore.XUnitTests\bin\Debug\xunit.assert.xml
+C:\Users\Николай\documents\visual studio 2015\Projects\GameStore\GameStore.XUnitTests\bin\Debug\xunit.core.pdb
+C:\Users\Николай\documents\visual studio 2015\Projects\GameStore\GameStore.XUnitTests\bin\Debug\xunit.core.xml
+C:\Users\Николай\documents\visual studio 2015\Projects\GameStore\GameStore.XUnitTests\obj\Debug\GameStore.XUnitTests.csprojResolveAssemblyReference.cache
+C:\Users\Николай\documents\visual studio 2015\Projects\GameStore\GameStore.XUnitTests\obj\Debug\GameStore.XUnitTests.dll
+C:\Users\Николай\documents\visual studio 2015\Projects\GameStore\GameStore.XUnitTests\obj\Debug\GameStore.XUnitTests.pdb

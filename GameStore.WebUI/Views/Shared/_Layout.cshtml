@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap-theme.css" rel="stylesheet"/>
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div class="navbar navbar-inverse" role="navigation">
+        <a class="navbar-brand" href="#">GameStore</a>
+        @Component.Invoke("Summary")
+    </div>
+    <div class="row panel">
+        <div id="categories" class="col-xs-3">
+          @Component.Invoke("Nav")
+        </div>
+        <div id="categories" class="col-xs-8">
+            @RenderBody()
+        </div>
+    </div>
+    
+    </body>
+</html>

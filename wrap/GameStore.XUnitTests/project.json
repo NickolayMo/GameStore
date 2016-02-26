@@ -1,0 +1,20 @@
+{
+  "version": "1.0.0-*",
+  "frameworks": {
+    "net45": {
+      "wrappedProject": "../../GameStore.XUnitTests/GameStore.XUnitTests.csproj",
+      "bin": {
+        "assembly": "../../GameStore.XUnitTests/obj/{configuration}/GameStore.XUnitTests.dll",
+        "pdb": "../../GameStore.XUnitTests/obj/{configuration}/GameStore.XUnitTests.pdb"
+      },
+      "dependencies": {
+        "xunit": "2.0.0",
+        "xunit.abstractions": "2.0.0",
+        "xunit.assert": "2.0.0",
+        "xunit.core": "2.0.0",
+        "xunit.extensibility.core": "2.0.0",
+        "xunit.runner.visualstudio": "2.0.1"
+      }
+    }
+  }
+}
