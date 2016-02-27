@@ -17,11 +17,12 @@ namespace GameStore.WebUI.Controllers
     public class CartController : Controller
     {
         private IGameRepository _repository;
-        
+        private IOrderProcessor _processor;
 
-        public CartController(IGameRepository repo)
+        public CartController(IGameRepository repo, IOrderProcessor processor)
         {
-            _repository = repo;            
+            _repository = repo;
+            _processor = processor;
 
         }
         //cart получаем из CartModelBinder
@@ -63,12 +64,32 @@ namespace GameStore.WebUI.Controllers
             return PartialView(cart);
         }
 
-        public ViewResult Checkout(Cart cart, ShippingDetails shippingDetails)
+        public ViewResult Checkout()
         {
             return View(new ShippingDetails());
         }
 
+        [HttpPost]
+        public ViewResult Checkout(Cart cart, ShippingDetails shippingDetails)
+        {
+            if (cart.Lines.Count()==0)
+            {
+                ModelState.AddModelError("", "Извените ваша корзина пуста");
 
+            }
+            if (ModelState.IsValid)
+            {
+                _processor.ProcessOrder(cart, shippingDetails);
+                cart.Clear();
+                CartModelBinder.SetUpCart(cart, HttpContext.Session);
+                return View("Completed");
+            }
+            else
+            {
+                return View(shippingDetails);
+            }
+            
+        }
 
     }
 }

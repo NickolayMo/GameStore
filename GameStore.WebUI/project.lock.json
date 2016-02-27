@@ -1156,6 +1156,115 @@
           "lib/net451/Microsoft.Extensions.Caching.Memory.dll": {}
         }
       },
+      "Microsoft.Extensions.CodeGeneration/1.0.0-rc1-final": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.CodeGeneration.Core": "1.0.0-rc1-final",
+          "Microsoft.Extensions.CodeGeneration.EntityFramework": "1.0.0-rc1-final",
+          "Microsoft.Extensions.CodeGeneration.Templating": "1.0.0-rc1-final",
+          "Microsoft.Extensions.DependencyInjection": "1.0.0-rc1-final"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Extensions.CodeGeneration.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Extensions.CodeGeneration.dll": {}
+        }
+      },
+      "Microsoft.Extensions.CodeGeneration.Core/1.0.0-rc1-final": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Dnx.Compilation.CSharp.Abstractions": "1.0.0-rc1-final",
+          "Microsoft.Extensions.CodeGeneration.Templating": "1.0.0-rc1-final",
+          "Microsoft.Extensions.DependencyInjection": "1.0.0-rc1-final",
+          "Microsoft.Extensions.PlatformAbstractions": "1.0.0-rc1-final",
+          "Newtonsoft.Json": "6.0.6"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Extensions.CodeGeneration.Core.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Extensions.CodeGeneration.Core.dll": {}
+        }
+      },
+      "Microsoft.Extensions.CodeGeneration.EntityFramework/1.0.0-rc1-final": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework.Core": "7.0.0-rc1-final",
+          "Microsoft.AspNet.Hosting": "1.0.0-rc1-final",
+          "Microsoft.Extensions.CodeGeneration.Core": "1.0.0-rc1-final",
+          "Microsoft.Extensions.CodeGeneration.Templating": "1.0.0-rc1-final"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core",
+          "System.Text.Encoding"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Extensions.CodeGeneration.EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Extensions.CodeGeneration.EntityFramework.dll": {}
+        }
+      },
+      "Microsoft.Extensions.CodeGeneration.Templating/1.0.0-rc1-final": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "4.0.0-rc1-final",
+          "Microsoft.Dnx.Compilation.CSharp.Abstractions": "1.0.0-rc1-final"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core",
+          "System.IO",
+          "System.Runtime",
+          "System.Text.Encoding",
+          "System.Threading.Tasks"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Extensions.CodeGeneration.Templating.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Extensions.CodeGeneration.Templating.dll": {}
+        }
+      },
+      "Microsoft.Extensions.CodeGenerators.Mvc/1.0.0-rc1-final": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.CodeGeneration": "1.0.0-rc1-final",
+          "Microsoft.Extensions.CodeGeneration.EntityFramework": "1.0.0-rc1-final",
+          "Microsoft.Extensions.CodeGeneration.Templating": "1.0.0-rc1-final",
+          "Newtonsoft.Json": "6.0.6"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Extensions.CodeGenerators.Mvc.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Extensions.CodeGenerators.Mvc.dll": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/1.0.0-rc1-final": {
         "type": "package",
         "dependencies": {
@@ -1516,6 +1625,238 @@
         },
         "runtime": {
           "lib/net451/Microsoft.Extensions.WebEncoders.Core.dll": {}
+        }
+      },
+      "Microsoft.Framework.CodeGeneration/1.0.0-beta5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Framework.CodeGeneration.Core": "1.0.0-beta5",
+          "Microsoft.Framework.CodeGeneration.EntityFramework": "1.0.0-beta5",
+          "Microsoft.Framework.CodeGeneration.Templating": "1.0.0-beta5",
+          "Microsoft.Framework.DependencyInjection": "1.0.0-beta5"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.CodeGeneration.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.CodeGeneration.dll": {}
+        }
+      },
+      "Microsoft.Framework.CodeGeneration.Core/1.0.0-beta5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Framework.CodeGeneration.Templating": "1.0.0-beta5",
+          "Microsoft.Framework.CommandLineUtils.Sources": "1.0.0-beta5",
+          "Microsoft.Framework.DependencyInjection": "1.0.0-beta5",
+          "Microsoft.Framework.Runtime.Abstractions": "1.0.0-beta5",
+          "Microsoft.Framework.Runtime.Roslyn": "1.0.0-beta5",
+          "Newtonsoft.Json": "6.0.6"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.CodeGeneration.Core.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.CodeGeneration.Core.dll": {}
+        }
+      },
+      "Microsoft.Framework.CodeGeneration.EntityFramework/1.0.0-beta5": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework.Core": "7.0.0-beta5",
+          "Microsoft.Framework.CodeGeneration.Core": "1.0.0-beta5",
+          "Microsoft.Framework.CodeGeneration.Templating": "1.0.0-beta5",
+          "Microsoft.Framework.Runtime.Abstractions": "1.0.0-beta5"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core",
+          "System.Text.Encoding"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.CodeGeneration.EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.CodeGeneration.EntityFramework.dll": {}
+        }
+      },
+      "Microsoft.Framework.CodeGeneration.Templating/1.0.0-beta5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "4.0.0-beta5",
+          "Microsoft.Framework.Runtime.Roslyn": "1.0.0-beta5"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core",
+          "System.Runtime"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.CodeGeneration.Templating.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.CodeGeneration.Templating.dll": {}
+        }
+      },
+      "Microsoft.Framework.CodeGenerators.Mvc/1.0.0-beta5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Framework.CodeGeneration": "1.0.0-beta5",
+          "Microsoft.Framework.CodeGeneration.EntityFramework": "1.0.0-beta5",
+          "Microsoft.Framework.CodeGeneration.Templating": "1.0.0-beta5",
+          "Microsoft.Framework.Runtime.Abstractions": "1.0.0-beta5",
+          "Newtonsoft.Json": "6.0.6"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.CodeGenerators.Mvc.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.CodeGenerators.Mvc.dll": {}
+        }
+      },
+      "Microsoft.Framework.CommandLineUtils.Sources/1.0.0-beta5": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.CommandLineUtils.Sources.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.CommandLineUtils.Sources.dll": {}
+        }
+      },
+      "Microsoft.Framework.DependencyInjection/1.0.0-beta5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Framework.DependencyInjection.Abstractions": "1.0.0-beta5"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.DependencyInjection.dll": {}
+        }
+      },
+      "Microsoft.Framework.DependencyInjection.Abstractions/1.0.0-beta5": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.DependencyInjection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.DependencyInjection.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Framework.Runtime.Abstractions/1.0.0-beta5": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.Runtime.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.Runtime.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Framework.Runtime.Caching/1.0.0-beta5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Framework.Runtime.Abstractions": "1.0.0-beta5"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.Runtime.Caching.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.Runtime.Caching.dll": {}
+        }
+      },
+      "Microsoft.Framework.Runtime.Roslyn/1.0.0-beta5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Framework.Runtime.Abstractions": "1.0.0-beta5",
+          "Microsoft.Framework.Runtime.Caching": "1.0.0-beta5",
+          "Microsoft.Framework.Runtime.Roslyn.Abstractions": "1.0.0-beta5"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Collections",
+          "System.Core",
+          "System.IO",
+          "System.Text.Encoding",
+          "System.Threading.Tasks"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.Runtime.Roslyn.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.Runtime.Roslyn.dll": {}
+        }
+      },
+      "Microsoft.Framework.Runtime.Roslyn.Abstractions/1.0.0-beta5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CodeAnalysis.CSharp": "1.0.0-rc3",
+          "Microsoft.Framework.Runtime.Abstractions": "1.0.0-beta5"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.Runtime.Roslyn.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.Runtime.Roslyn.Abstractions.dll": {}
         }
       },
       "Microsoft.Net.Http.Headers/1.0.0-rc1-final": {
@@ -2938,6 +3279,115 @@
           "lib/net451/Microsoft.Extensions.Caching.Memory.dll": {}
         }
       },
+      "Microsoft.Extensions.CodeGeneration/1.0.0-rc1-final": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.CodeGeneration.Core": "1.0.0-rc1-final",
+          "Microsoft.Extensions.CodeGeneration.EntityFramework": "1.0.0-rc1-final",
+          "Microsoft.Extensions.CodeGeneration.Templating": "1.0.0-rc1-final",
+          "Microsoft.Extensions.DependencyInjection": "1.0.0-rc1-final"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Extensions.CodeGeneration.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Extensions.CodeGeneration.dll": {}
+        }
+      },
+      "Microsoft.Extensions.CodeGeneration.Core/1.0.0-rc1-final": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Dnx.Compilation.CSharp.Abstractions": "1.0.0-rc1-final",
+          "Microsoft.Extensions.CodeGeneration.Templating": "1.0.0-rc1-final",
+          "Microsoft.Extensions.DependencyInjection": "1.0.0-rc1-final",
+          "Microsoft.Extensions.PlatformAbstractions": "1.0.0-rc1-final",
+          "Newtonsoft.Json": "6.0.6"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Extensions.CodeGeneration.Core.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Extensions.CodeGeneration.Core.dll": {}
+        }
+      },
+      "Microsoft.Extensions.CodeGeneration.EntityFramework/1.0.0-rc1-final": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework.Core": "7.0.0-rc1-final",
+          "Microsoft.AspNet.Hosting": "1.0.0-rc1-final",
+          "Microsoft.Extensions.CodeGeneration.Core": "1.0.0-rc1-final",
+          "Microsoft.Extensions.CodeGeneration.Templating": "1.0.0-rc1-final"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core",
+          "System.Text.Encoding"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Extensions.CodeGeneration.EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Extensions.CodeGeneration.EntityFramework.dll": {}
+        }
+      },
+      "Microsoft.Extensions.CodeGeneration.Templating/1.0.0-rc1-final": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "4.0.0-rc1-final",
+          "Microsoft.Dnx.Compilation.CSharp.Abstractions": "1.0.0-rc1-final"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core",
+          "System.IO",
+          "System.Runtime",
+          "System.Text.Encoding",
+          "System.Threading.Tasks"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Extensions.CodeGeneration.Templating.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Extensions.CodeGeneration.Templating.dll": {}
+        }
+      },
+      "Microsoft.Extensions.CodeGenerators.Mvc/1.0.0-rc1-final": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.CodeGeneration": "1.0.0-rc1-final",
+          "Microsoft.Extensions.CodeGeneration.EntityFramework": "1.0.0-rc1-final",
+          "Microsoft.Extensions.CodeGeneration.Templating": "1.0.0-rc1-final",
+          "Newtonsoft.Json": "6.0.6"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Extensions.CodeGenerators.Mvc.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Extensions.CodeGenerators.Mvc.dll": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/1.0.0-rc1-final": {
         "type": "package",
         "dependencies": {
@@ -3298,6 +3748,238 @@
         },
         "runtime": {
           "lib/net451/Microsoft.Extensions.WebEncoders.Core.dll": {}
+        }
+      },
+      "Microsoft.Framework.CodeGeneration/1.0.0-beta5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Framework.CodeGeneration.Core": "1.0.0-beta5",
+          "Microsoft.Framework.CodeGeneration.EntityFramework": "1.0.0-beta5",
+          "Microsoft.Framework.CodeGeneration.Templating": "1.0.0-beta5",
+          "Microsoft.Framework.DependencyInjection": "1.0.0-beta5"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.CodeGeneration.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.CodeGeneration.dll": {}
+        }
+      },
+      "Microsoft.Framework.CodeGeneration.Core/1.0.0-beta5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Framework.CodeGeneration.Templating": "1.0.0-beta5",
+          "Microsoft.Framework.CommandLineUtils.Sources": "1.0.0-beta5",
+          "Microsoft.Framework.DependencyInjection": "1.0.0-beta5",
+          "Microsoft.Framework.Runtime.Abstractions": "1.0.0-beta5",
+          "Microsoft.Framework.Runtime.Roslyn": "1.0.0-beta5",
+          "Newtonsoft.Json": "6.0.6"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.CodeGeneration.Core.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.CodeGeneration.Core.dll": {}
+        }
+      },
+      "Microsoft.Framework.CodeGeneration.EntityFramework/1.0.0-beta5": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework.Core": "7.0.0-beta5",
+          "Microsoft.Framework.CodeGeneration.Core": "1.0.0-beta5",
+          "Microsoft.Framework.CodeGeneration.Templating": "1.0.0-beta5",
+          "Microsoft.Framework.Runtime.Abstractions": "1.0.0-beta5"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core",
+          "System.Text.Encoding"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.CodeGeneration.EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.CodeGeneration.EntityFramework.dll": {}
+        }
+      },
+      "Microsoft.Framework.CodeGeneration.Templating/1.0.0-beta5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "4.0.0-beta5",
+          "Microsoft.Framework.Runtime.Roslyn": "1.0.0-beta5"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core",
+          "System.Runtime"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.CodeGeneration.Templating.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.CodeGeneration.Templating.dll": {}
+        }
+      },
+      "Microsoft.Framework.CodeGenerators.Mvc/1.0.0-beta5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Framework.CodeGeneration": "1.0.0-beta5",
+          "Microsoft.Framework.CodeGeneration.EntityFramework": "1.0.0-beta5",
+          "Microsoft.Framework.CodeGeneration.Templating": "1.0.0-beta5",
+          "Microsoft.Framework.Runtime.Abstractions": "1.0.0-beta5",
+          "Newtonsoft.Json": "6.0.6"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.CodeGenerators.Mvc.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.CodeGenerators.Mvc.dll": {}
+        }
+      },
+      "Microsoft.Framework.CommandLineUtils.Sources/1.0.0-beta5": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.CommandLineUtils.Sources.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.CommandLineUtils.Sources.dll": {}
+        }
+      },
+      "Microsoft.Framework.DependencyInjection/1.0.0-beta5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Framework.DependencyInjection.Abstractions": "1.0.0-beta5"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.DependencyInjection.dll": {}
+        }
+      },
+      "Microsoft.Framework.DependencyInjection.Abstractions/1.0.0-beta5": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.DependencyInjection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.DependencyInjection.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Framework.Runtime.Abstractions/1.0.0-beta5": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.Runtime.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.Runtime.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Framework.Runtime.Caching/1.0.0-beta5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Framework.Runtime.Abstractions": "1.0.0-beta5"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.Runtime.Caching.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.Runtime.Caching.dll": {}
+        }
+      },
+      "Microsoft.Framework.Runtime.Roslyn/1.0.0-beta5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Framework.Runtime.Abstractions": "1.0.0-beta5",
+          "Microsoft.Framework.Runtime.Caching": "1.0.0-beta5",
+          "Microsoft.Framework.Runtime.Roslyn.Abstractions": "1.0.0-beta5"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Collections",
+          "System.Core",
+          "System.IO",
+          "System.Text.Encoding",
+          "System.Threading.Tasks"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.Runtime.Roslyn.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.Runtime.Roslyn.dll": {}
+        }
+      },
+      "Microsoft.Framework.Runtime.Roslyn.Abstractions/1.0.0-beta5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CodeAnalysis.CSharp": "1.0.0-rc3",
+          "Microsoft.Framework.Runtime.Abstractions": "1.0.0-beta5"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.Runtime.Roslyn.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.Runtime.Roslyn.Abstractions.dll": {}
         }
       },
       "Microsoft.Net.Http.Headers/1.0.0-rc1-final": {
@@ -4720,6 +5402,115 @@
           "lib/net451/Microsoft.Extensions.Caching.Memory.dll": {}
         }
       },
+      "Microsoft.Extensions.CodeGeneration/1.0.0-rc1-final": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.CodeGeneration.Core": "1.0.0-rc1-final",
+          "Microsoft.Extensions.CodeGeneration.EntityFramework": "1.0.0-rc1-final",
+          "Microsoft.Extensions.CodeGeneration.Templating": "1.0.0-rc1-final",
+          "Microsoft.Extensions.DependencyInjection": "1.0.0-rc1-final"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Extensions.CodeGeneration.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Extensions.CodeGeneration.dll": {}
+        }
+      },
+      "Microsoft.Extensions.CodeGeneration.Core/1.0.0-rc1-final": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Dnx.Compilation.CSharp.Abstractions": "1.0.0-rc1-final",
+          "Microsoft.Extensions.CodeGeneration.Templating": "1.0.0-rc1-final",
+          "Microsoft.Extensions.DependencyInjection": "1.0.0-rc1-final",
+          "Microsoft.Extensions.PlatformAbstractions": "1.0.0-rc1-final",
+          "Newtonsoft.Json": "6.0.6"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Extensions.CodeGeneration.Core.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Extensions.CodeGeneration.Core.dll": {}
+        }
+      },
+      "Microsoft.Extensions.CodeGeneration.EntityFramework/1.0.0-rc1-final": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework.Core": "7.0.0-rc1-final",
+          "Microsoft.AspNet.Hosting": "1.0.0-rc1-final",
+          "Microsoft.Extensions.CodeGeneration.Core": "1.0.0-rc1-final",
+          "Microsoft.Extensions.CodeGeneration.Templating": "1.0.0-rc1-final"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core",
+          "System.Text.Encoding"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Extensions.CodeGeneration.EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Extensions.CodeGeneration.EntityFramework.dll": {}
+        }
+      },
+      "Microsoft.Extensions.CodeGeneration.Templating/1.0.0-rc1-final": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "4.0.0-rc1-final",
+          "Microsoft.Dnx.Compilation.CSharp.Abstractions": "1.0.0-rc1-final"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core",
+          "System.IO",
+          "System.Runtime",
+          "System.Text.Encoding",
+          "System.Threading.Tasks"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Extensions.CodeGeneration.Templating.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Extensions.CodeGeneration.Templating.dll": {}
+        }
+      },
+      "Microsoft.Extensions.CodeGenerators.Mvc/1.0.0-rc1-final": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.CodeGeneration": "1.0.0-rc1-final",
+          "Microsoft.Extensions.CodeGeneration.EntityFramework": "1.0.0-rc1-final",
+          "Microsoft.Extensions.CodeGeneration.Templating": "1.0.0-rc1-final",
+          "Newtonsoft.Json": "6.0.6"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Extensions.CodeGenerators.Mvc.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Extensions.CodeGenerators.Mvc.dll": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/1.0.0-rc1-final": {
         "type": "package",
         "dependencies": {
@@ -5080,6 +5871,238 @@
         },
         "runtime": {
           "lib/net451/Microsoft.Extensions.WebEncoders.Core.dll": {}
+        }
+      },
+      "Microsoft.Framework.CodeGeneration/1.0.0-beta5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Framework.CodeGeneration.Core": "1.0.0-beta5",
+          "Microsoft.Framework.CodeGeneration.EntityFramework": "1.0.0-beta5",
+          "Microsoft.Framework.CodeGeneration.Templating": "1.0.0-beta5",
+          "Microsoft.Framework.DependencyInjection": "1.0.0-beta5"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.CodeGeneration.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.CodeGeneration.dll": {}
+        }
+      },
+      "Microsoft.Framework.CodeGeneration.Core/1.0.0-beta5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Framework.CodeGeneration.Templating": "1.0.0-beta5",
+          "Microsoft.Framework.CommandLineUtils.Sources": "1.0.0-beta5",
+          "Microsoft.Framework.DependencyInjection": "1.0.0-beta5",
+          "Microsoft.Framework.Runtime.Abstractions": "1.0.0-beta5",
+          "Microsoft.Framework.Runtime.Roslyn": "1.0.0-beta5",
+          "Newtonsoft.Json": "6.0.6"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.CodeGeneration.Core.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.CodeGeneration.Core.dll": {}
+        }
+      },
+      "Microsoft.Framework.CodeGeneration.EntityFramework/1.0.0-beta5": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework.Core": "7.0.0-beta5",
+          "Microsoft.Framework.CodeGeneration.Core": "1.0.0-beta5",
+          "Microsoft.Framework.CodeGeneration.Templating": "1.0.0-beta5",
+          "Microsoft.Framework.Runtime.Abstractions": "1.0.0-beta5"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core",
+          "System.Text.Encoding"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.CodeGeneration.EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.CodeGeneration.EntityFramework.dll": {}
+        }
+      },
+      "Microsoft.Framework.CodeGeneration.Templating/1.0.0-beta5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "4.0.0-beta5",
+          "Microsoft.Framework.Runtime.Roslyn": "1.0.0-beta5"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core",
+          "System.Runtime"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.CodeGeneration.Templating.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.CodeGeneration.Templating.dll": {}
+        }
+      },
+      "Microsoft.Framework.CodeGenerators.Mvc/1.0.0-beta5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Framework.CodeGeneration": "1.0.0-beta5",
+          "Microsoft.Framework.CodeGeneration.EntityFramework": "1.0.0-beta5",
+          "Microsoft.Framework.CodeGeneration.Templating": "1.0.0-beta5",
+          "Microsoft.Framework.Runtime.Abstractions": "1.0.0-beta5",
+          "Newtonsoft.Json": "6.0.6"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.CodeGenerators.Mvc.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.CodeGenerators.Mvc.dll": {}
+        }
+      },
+      "Microsoft.Framework.CommandLineUtils.Sources/1.0.0-beta5": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.CommandLineUtils.Sources.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.CommandLineUtils.Sources.dll": {}
+        }
+      },
+      "Microsoft.Framework.DependencyInjection/1.0.0-beta5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Framework.DependencyInjection.Abstractions": "1.0.0-beta5"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.DependencyInjection.dll": {}
+        }
+      },
+      "Microsoft.Framework.DependencyInjection.Abstractions/1.0.0-beta5": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.DependencyInjection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.DependencyInjection.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Framework.Runtime.Abstractions/1.0.0-beta5": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.Runtime.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.Runtime.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Framework.Runtime.Caching/1.0.0-beta5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Framework.Runtime.Abstractions": "1.0.0-beta5"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.Runtime.Caching.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.Runtime.Caching.dll": {}
+        }
+      },
+      "Microsoft.Framework.Runtime.Roslyn/1.0.0-beta5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Framework.Runtime.Abstractions": "1.0.0-beta5",
+          "Microsoft.Framework.Runtime.Caching": "1.0.0-beta5",
+          "Microsoft.Framework.Runtime.Roslyn.Abstractions": "1.0.0-beta5"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Collections",
+          "System.Core",
+          "System.IO",
+          "System.Text.Encoding",
+          "System.Threading.Tasks"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.Runtime.Roslyn.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.Runtime.Roslyn.dll": {}
+        }
+      },
+      "Microsoft.Framework.Runtime.Roslyn.Abstractions/1.0.0-beta5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CodeAnalysis.CSharp": "1.0.0-rc3",
+          "Microsoft.Framework.Runtime.Abstractions": "1.0.0-beta5"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.Runtime.Roslyn.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.Runtime.Roslyn.Abstractions.dll": {}
         }
       },
       "Microsoft.Net.Http.Headers/1.0.0-rc1-final": {
@@ -6220,6 +7243,108 @@
         "Microsoft.Extensions.Caching.Memory.nuspec"
       ]
     },
+    "Microsoft.Extensions.CodeGeneration/1.0.0-rc1-final": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "Mkld1xqSkU1CuMtMlbKMPwzoXMXBzC/SdOiRLutd632mGrQCDwhBgrxiBDfFDD63OxWt24TjMZkqlxmRRTm7zQ==",
+      "files": [
+        "lib/dnx451/Microsoft.Extensions.CodeGeneration.dll",
+        "lib/dnx451/Microsoft.Extensions.CodeGeneration.xml",
+        "lib/dnxcore50/Microsoft.Extensions.CodeGeneration.dll",
+        "lib/dnxcore50/Microsoft.Extensions.CodeGeneration.xml",
+        "Microsoft.Extensions.CodeGeneration.1.0.0-rc1-final.nupkg",
+        "Microsoft.Extensions.CodeGeneration.1.0.0-rc1-final.nupkg.sha512",
+        "Microsoft.Extensions.CodeGeneration.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.CodeGeneration.Core/1.0.0-rc1-final": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "uQe19xMM4ymoC9uU/rLZTkbSH8n/CVKEjw4jbLfoFq179+LH4IxDRqPqidEMQUF6ON4jYVwhexuAMPJdQ5ewjQ==",
+      "files": [
+        "lib/dnx451/Microsoft.Extensions.CodeGeneration.Core.dll",
+        "lib/dnx451/Microsoft.Extensions.CodeGeneration.Core.xml",
+        "lib/dnxcore50/Microsoft.Extensions.CodeGeneration.Core.dll",
+        "lib/dnxcore50/Microsoft.Extensions.CodeGeneration.Core.xml",
+        "Microsoft.Extensions.CodeGeneration.Core.1.0.0-rc1-final.nupkg",
+        "Microsoft.Extensions.CodeGeneration.Core.1.0.0-rc1-final.nupkg.sha512",
+        "Microsoft.Extensions.CodeGeneration.Core.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.CodeGeneration.EntityFramework/1.0.0-rc1-final": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "Bs5bPxbPlTYAB5d1+bPjnAZqQyQMueg0orED8boIlwb66he5pFO7LuQ3Q+BNTUB4x3M1q1U7L1L469tllVtGZg==",
+      "files": [
+        "lib/dnx451/Microsoft.Extensions.CodeGeneration.EntityFramework.dll",
+        "lib/dnx451/Microsoft.Extensions.CodeGeneration.EntityFramework.xml",
+        "lib/dnxcore50/Microsoft.Extensions.CodeGeneration.EntityFramework.dll",
+        "lib/dnxcore50/Microsoft.Extensions.CodeGeneration.EntityFramework.xml",
+        "Microsoft.Extensions.CodeGeneration.EntityFramework.1.0.0-rc1-final.nupkg",
+        "Microsoft.Extensions.CodeGeneration.EntityFramework.1.0.0-rc1-final.nupkg.sha512",
+        "Microsoft.Extensions.CodeGeneration.EntityFramework.nuspec",
+        "Templates/DbContext/NewLocalDbContext.cshtml"
+      ]
+    },
+    "Microsoft.Extensions.CodeGeneration.Templating/1.0.0-rc1-final": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "d20Suo15M+sNS5QBYMfJpBgSUFclVSeIU06Y/snnmKdNjAiQfbKkW0bG8ryBw8zn29KXHcK39DwUpkrFvphQIg==",
+      "files": [
+        "lib/dnx451/Microsoft.Extensions.CodeGeneration.Templating.dll",
+        "lib/dnx451/Microsoft.Extensions.CodeGeneration.Templating.xml",
+        "lib/dnxcore50/Microsoft.Extensions.CodeGeneration.Templating.dll",
+        "lib/dnxcore50/Microsoft.Extensions.CodeGeneration.Templating.xml",
+        "Microsoft.Extensions.CodeGeneration.Templating.1.0.0-rc1-final.nupkg",
+        "Microsoft.Extensions.CodeGeneration.Templating.1.0.0-rc1-final.nupkg.sha512",
+        "Microsoft.Extensions.CodeGeneration.Templating.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.CodeGenerators.Mvc/1.0.0-rc1-final": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "rkec5T1UW17vRb6rPWEDOq4WHj7+mu8IKWuea9I05YKDACo/EBgDhqp4aoZrOsNzoEH6k+NlL0FRa3o5s9vglA==",
+      "files": [
+        "lib/dnx451/Microsoft.Extensions.CodeGenerators.Mvc.dll",
+        "lib/dnx451/Microsoft.Extensions.CodeGenerators.Mvc.xml",
+        "lib/dnxcore50/Microsoft.Extensions.CodeGenerators.Mvc.dll",
+        "lib/dnxcore50/Microsoft.Extensions.CodeGenerators.Mvc.xml",
+        "Microsoft.Extensions.CodeGenerators.Mvc.1.0.0-rc1-final.nupkg",
+        "Microsoft.Extensions.CodeGenerators.Mvc.1.0.0-rc1-final.nupkg.sha512",
+        "Microsoft.Extensions.CodeGenerators.Mvc.nuspec",
+        "Templates/ControllerGenerator/ApiControllerWithContext.cshtml",
+        "Templates/ControllerGenerator/EmptyController.cshtml",
+        "Templates/ControllerGenerator/MvcControllerWithContext.cshtml",
+        "Templates/MvcLayout/_Layout.cshtml",
+        "Templates/MvcLayout/Error.cshtml",
+        "Templates/Startup/ReadMe.cshtml",
+        "Templates/Startup/Startup.cshtml",
+        "Templates/StaticFiles/Content/bootstrap.css",
+        "Templates/StaticFiles/Content/bootstrap.min.css",
+        "Templates/StaticFiles/Content/Scripts/_references.js",
+        "Templates/StaticFiles/Content/Scripts/bootstrap.js",
+        "Templates/StaticFiles/Content/Scripts/bootstrap.min.js",
+        "Templates/StaticFiles/Content/Scripts/jquery.validate.js",
+        "Templates/StaticFiles/Content/Scripts/jquery.validate.min.js",
+        "Templates/StaticFiles/Content/Scripts/jquery.validate.unobtrusive.js",
+        "Templates/StaticFiles/Content/Scripts/jquery.validate.unobtrusive.min.js",
+        "Templates/StaticFiles/Content/Scripts/jquery.validate-vsdoc.js",
+        "Templates/StaticFiles/Content/Scripts/jquery-1.10.2.intellisense.js",
+        "Templates/StaticFiles/Content/Scripts/jquery-1.10.2.js",
+        "Templates/StaticFiles/Content/Scripts/jquery-1.10.2.min.js",
+        "Templates/StaticFiles/Content/Scripts/jquery-1.10.2.min.map",
+        "Templates/StaticFiles/Content/Scripts/modernizr-2.6.2.js",
+        "Templates/StaticFiles/Content/Scripts/respond.js",
+        "Templates/StaticFiles/Content/Scripts/respond.min.js",
+        "Templates/StaticFiles/Content/Site.css",
+        "Templates/ViewGenerator/Create.cshtml",
+        "Templates/ViewGenerator/Delete.cshtml",
+        "Templates/ViewGenerator/Details.cshtml",
+        "Templates/ViewGenerator/Edit.cshtml",
+        "Templates/ViewGenerator/List.cshtml",
+        "THIRDPARTYNOTICE ASP.NET_Preview.rtf"
+      ]
+    },
     "Microsoft.Extensions.Configuration/1.0.0-rc1-final": {
       "type": "package",
       "serviceable": true,
@@ -6538,6 +7663,212 @@
         "Microsoft.Extensions.WebEncoders.Core.1.0.0-rc1-final.nupkg",
         "Microsoft.Extensions.WebEncoders.Core.1.0.0-rc1-final.nupkg.sha512",
         "Microsoft.Extensions.WebEncoders.Core.nuspec"
+      ]
+    },
+    "Microsoft.Framework.CodeGeneration/1.0.0-beta5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "LDB27RxdTfH7Bub+o9p0q7hI+4+c0CvpIkLKmvi3anqaSqmLvA7bpLb5wF+O9WyfHWCJ8apWl82RvfY0QGX5iQ==",
+      "files": [
+        "lib/dnx451/Microsoft.Framework.CodeGeneration.dll",
+        "lib/dnx451/Microsoft.Framework.CodeGeneration.xml",
+        "lib/dnxcore50/Microsoft.Framework.CodeGeneration.dll",
+        "lib/dnxcore50/Microsoft.Framework.CodeGeneration.xml",
+        "Microsoft.Framework.CodeGeneration.1.0.0-beta5.nupkg",
+        "Microsoft.Framework.CodeGeneration.1.0.0-beta5.nupkg.sha512",
+        "Microsoft.Framework.CodeGeneration.nuspec"
+      ]
+    },
+    "Microsoft.Framework.CodeGeneration.Core/1.0.0-beta5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "cCeO4yaetXEoFKTRMb7T/EFQGy1AeIDLkYCbaTlV9NqXFuL5Y0Ws8g0uABm9KrBbPa4pBoF5ZIqrhG88Mun0Yg==",
+      "files": [
+        "lib/dnx451/Microsoft.Framework.CodeGeneration.Core.dll",
+        "lib/dnx451/Microsoft.Framework.CodeGeneration.Core.xml",
+        "lib/dnxcore50/Microsoft.Framework.CodeGeneration.Core.dll",
+        "lib/dnxcore50/Microsoft.Framework.CodeGeneration.Core.xml",
+        "Microsoft.Framework.CodeGeneration.Core.1.0.0-beta5.nupkg",
+        "Microsoft.Framework.CodeGeneration.Core.1.0.0-beta5.nupkg.sha512",
+        "Microsoft.Framework.CodeGeneration.Core.nuspec"
+      ]
+    },
+    "Microsoft.Framework.CodeGeneration.EntityFramework/1.0.0-beta5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "eNaW1ug89BxTHv/+I+9qjiv2F20tGMsthwoQgShCg7Idrf/9YPmKUoEiANxdzbzaUspICwhBqVXBUClNjAYmZQ==",
+      "files": [
+        "lib/dnx451/Microsoft.Framework.CodeGeneration.EntityFramework.dll",
+        "lib/dnx451/Microsoft.Framework.CodeGeneration.EntityFramework.xml",
+        "lib/dnxcore50/Microsoft.Framework.CodeGeneration.EntityFramework.dll",
+        "lib/dnxcore50/Microsoft.Framework.CodeGeneration.EntityFramework.xml",
+        "Microsoft.Framework.CodeGeneration.EntityFramework.1.0.0-beta5.nupkg",
+        "Microsoft.Framework.CodeGeneration.EntityFramework.1.0.0-beta5.nupkg.sha512",
+        "Microsoft.Framework.CodeGeneration.EntityFramework.nuspec",
+        "Templates/DbContext/NewLocalDbContext.cshtml"
+      ]
+    },
+    "Microsoft.Framework.CodeGeneration.Templating/1.0.0-beta5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "9dbvhaxKIhGMpGqXHhkH73BYZJ2G9nsry3nBRvCWeYecu8IDycjy1l6pmeixpQrcOt1bIAIHJkwIRruSVdzHMA==",
+      "files": [
+        "lib/dnx451/Microsoft.Framework.CodeGeneration.Templating.dll",
+        "lib/dnx451/Microsoft.Framework.CodeGeneration.Templating.xml",
+        "lib/dnxcore50/Microsoft.Framework.CodeGeneration.Templating.dll",
+        "lib/dnxcore50/Microsoft.Framework.CodeGeneration.Templating.xml",
+        "Microsoft.Framework.CodeGeneration.Templating.1.0.0-beta5.nupkg",
+        "Microsoft.Framework.CodeGeneration.Templating.1.0.0-beta5.nupkg.sha512",
+        "Microsoft.Framework.CodeGeneration.Templating.nuspec"
+      ]
+    },
+    "Microsoft.Framework.CodeGenerators.Mvc/1.0.0-beta5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "GLCs9nlYBrO+XzaZI464LFupuLsGCo3HPFSmIZKJBeEC+0ZPdGKh57AZUMcFdp5q52jBaeZTVuj1zYye6Yu32Q==",
+      "files": [
+        "lib/dnx451/Microsoft.Framework.CodeGenerators.Mvc.dll",
+        "lib/dnx451/Microsoft.Framework.CodeGenerators.Mvc.xml",
+        "lib/dnxcore50/Microsoft.Framework.CodeGenerators.Mvc.dll",
+        "lib/dnxcore50/Microsoft.Framework.CodeGenerators.Mvc.xml",
+        "Microsoft.Framework.CodeGenerators.Mvc.1.0.0-beta5.nupkg",
+        "Microsoft.Framework.CodeGenerators.Mvc.1.0.0-beta5.nupkg.sha512",
+        "Microsoft.Framework.CodeGenerators.Mvc.nuspec",
+        "Templates/ControllerGenerator/ControllerWithContext.cshtml",
+        "Templates/ControllerGenerator/EmptyController.cshtml",
+        "Templates/MvcLayout/_Layout.cshtml",
+        "Templates/MvcLayout/Error.cshtml",
+        "Templates/Startup/ReadMe.cshtml",
+        "Templates/Startup/Startup.cshtml",
+        "Templates/StaticFiles/Content/bootstrap.css",
+        "Templates/StaticFiles/Content/bootstrap.min.css",
+        "Templates/StaticFiles/Content/Site.css",
+        "Templates/StaticFiles/Scripts/_references.js",
+        "Templates/StaticFiles/Scripts/bootstrap.js",
+        "Templates/StaticFiles/Scripts/bootstrap.min.js",
+        "Templates/StaticFiles/Scripts/jquery.validate.js",
+        "Templates/StaticFiles/Scripts/jquery.validate.min.js",
+        "Templates/StaticFiles/Scripts/jquery.validate.unobtrusive.js",
+        "Templates/StaticFiles/Scripts/jquery.validate.unobtrusive.min.js",
+        "Templates/StaticFiles/Scripts/jquery.validate-vsdoc.js",
+        "Templates/StaticFiles/Scripts/jquery-1.10.2.intellisense.js",
+        "Templates/StaticFiles/Scripts/jquery-1.10.2.js",
+        "Templates/StaticFiles/Scripts/jquery-1.10.2.min.js",
+        "Templates/StaticFiles/Scripts/jquery-1.10.2.min.map",
+        "Templates/StaticFiles/Scripts/modernizr-2.6.2.js",
+        "Templates/StaticFiles/Scripts/respond.js",
+        "Templates/StaticFiles/Scripts/respond.min.js",
+        "Templates/ViewGenerator/Create.cshtml",
+        "Templates/ViewGenerator/Delete.cshtml",
+        "Templates/ViewGenerator/Details.cshtml",
+        "Templates/ViewGenerator/Edit.cshtml",
+        "Templates/ViewGenerator/List.cshtml",
+        "THIRDPARTYNOTICE ASP.NET_Preview.rtf"
+      ]
+    },
+    "Microsoft.Framework.CommandLineUtils.Sources/1.0.0-beta5": {
+      "type": "package",
+      "sha512": "sZIlSWm9r2CFDI5JB21lKwa8Hq7DZPBYx3LcBnuxZnhSh2AwrhrS88YUZSMP6QCV+PHMwj0udTdnS1eZ2DbM7w==",
+      "files": [
+        "lib/dnx451/Microsoft.Framework.CommandLineUtils.Sources.dll",
+        "lib/dnx451/Microsoft.Framework.CommandLineUtils.Sources.xml",
+        "lib/dnxcore50/Microsoft.Framework.CommandLineUtils.Sources.dll",
+        "lib/dnxcore50/Microsoft.Framework.CommandLineUtils.Sources.xml",
+        "Microsoft.Framework.CommandLineUtils.Sources.1.0.0-beta5.nupkg",
+        "Microsoft.Framework.CommandLineUtils.Sources.1.0.0-beta5.nupkg.sha512",
+        "Microsoft.Framework.CommandLineUtils.Sources.nuspec",
+        "shared/AnsiConsole.cs",
+        "shared/CommandArgument.cs",
+        "shared/CommandLineApplication.cs",
+        "shared/CommandOption.cs",
+        "shared/CommandOptionType.cs"
+      ]
+    },
+    "Microsoft.Framework.DependencyInjection/1.0.0-beta5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "Jau27ULONglLGNu4FAwk7XjC3JXB4LsSWb8QsSlCotiJmOXHG7x+MEVz0nAgmFFkN2VGjFjK0Klnz0z9aDaBaw==",
+      "files": [
+        "lib/dnx451/Microsoft.Framework.DependencyInjection.dll",
+        "lib/dnx451/Microsoft.Framework.DependencyInjection.xml",
+        "lib/dotnet/Microsoft.Framework.DependencyInjection.dll",
+        "lib/dotnet/Microsoft.Framework.DependencyInjection.xml",
+        "lib/net45/Microsoft.Framework.DependencyInjection.dll",
+        "lib/net45/Microsoft.Framework.DependencyInjection.xml",
+        "Microsoft.Framework.DependencyInjection.1.0.0-beta5.nupkg",
+        "Microsoft.Framework.DependencyInjection.1.0.0-beta5.nupkg.sha512",
+        "Microsoft.Framework.DependencyInjection.nuspec"
+      ]
+    },
+    "Microsoft.Framework.DependencyInjection.Abstractions/1.0.0-beta5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "/WgY/P0YftvScIfLyLee36H7fb6EUG2L6p5qZMp7quJ3aUEHUolZpXBbYQ9XP21KuX4ab0/zH8DD0mpMKjGDsw==",
+      "files": [
+        "lib/dnx451/Microsoft.Framework.DependencyInjection.Abstractions.dll",
+        "lib/dnx451/Microsoft.Framework.DependencyInjection.Abstractions.xml",
+        "lib/dotnet/Microsoft.Framework.DependencyInjection.Abstractions.dll",
+        "lib/dotnet/Microsoft.Framework.DependencyInjection.Abstractions.xml",
+        "lib/net45/Microsoft.Framework.DependencyInjection.Abstractions.dll",
+        "lib/net45/Microsoft.Framework.DependencyInjection.Abstractions.xml",
+        "Microsoft.Framework.DependencyInjection.Abstractions.1.0.0-beta5.nupkg",
+        "Microsoft.Framework.DependencyInjection.Abstractions.1.0.0-beta5.nupkg.sha512",
+        "Microsoft.Framework.DependencyInjection.Abstractions.nuspec"
+      ]
+    },
+    "Microsoft.Framework.Runtime.Abstractions/1.0.0-beta5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "w8FtN1i6dcKxCEF3fX2CYNA9LfkQ+vpGqmGAzRJn1Xg3N+73rywlIl7ijZLgCHS8MH0XO8KqpUCVR05UtVvJPg==",
+      "files": [
+        "lib/dnx451/Microsoft.Framework.Runtime.Abstractions.dll",
+        "lib/dnx451/Microsoft.Framework.Runtime.Abstractions.xml",
+        "lib/dnxcore50/Microsoft.Framework.Runtime.Abstractions.dll",
+        "lib/dnxcore50/Microsoft.Framework.Runtime.Abstractions.xml",
+        "Microsoft.Framework.Runtime.Abstractions.1.0.0-beta5.nupkg",
+        "Microsoft.Framework.Runtime.Abstractions.1.0.0-beta5.nupkg.sha512",
+        "Microsoft.Framework.Runtime.Abstractions.nuspec"
+      ]
+    },
+    "Microsoft.Framework.Runtime.Caching/1.0.0-beta5": {
+      "type": "package",
+      "sha512": "70c4qatSDcPulQ6MMtu208Aj0VjUZW3I+B8cYfvVCfU998PbA8rbRrzSkHXGJjs8wZj5CDRAFmX6S7SgfhsJIg==",
+      "files": [
+        "lib/dnx451/Microsoft.Framework.Runtime.Caching.dll",
+        "lib/dnx451/Microsoft.Framework.Runtime.Caching.xml",
+        "lib/dnxcore50/Microsoft.Framework.Runtime.Caching.dll",
+        "lib/dnxcore50/Microsoft.Framework.Runtime.Caching.xml",
+        "Microsoft.Framework.Runtime.Caching.1.0.0-beta5.nupkg",
+        "Microsoft.Framework.Runtime.Caching.1.0.0-beta5.nupkg.sha512",
+        "Microsoft.Framework.Runtime.Caching.nuspec"
+      ]
+    },
+    "Microsoft.Framework.Runtime.Roslyn/1.0.0-beta5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "ThA+b10cV9XKt2tWm1JHxO/j+LVmHp4X22I0p+xno1nHZE831v+ZkgxLcfu2DypY18hTP0zobYxupC44edrHGA==",
+      "files": [
+        "lib/dnx451/Microsoft.Framework.Runtime.Roslyn.dll",
+        "lib/dnx451/Microsoft.Framework.Runtime.Roslyn.xml",
+        "lib/dnxcore50/Microsoft.Framework.Runtime.Roslyn.dll",
+        "lib/dnxcore50/Microsoft.Framework.Runtime.Roslyn.xml",
+        "Microsoft.Framework.Runtime.Roslyn.1.0.0-beta5.nupkg",
+        "Microsoft.Framework.Runtime.Roslyn.1.0.0-beta5.nupkg.sha512",
+        "Microsoft.Framework.Runtime.Roslyn.nuspec"
+      ]
+    },
+    "Microsoft.Framework.Runtime.Roslyn.Abstractions/1.0.0-beta5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "BHWWRfmzRaHPWnWNFnI3SO+Q4H0JCwnBuspfwv1PeHwOjygMV4jN6+w5T8UjgRM3/pVt2A7ZhlX8RjAQBeEZfA==",
+      "files": [
+        "lib/dnx451/Microsoft.Framework.Runtime.Roslyn.Abstractions.dll",
+        "lib/dnx451/Microsoft.Framework.Runtime.Roslyn.Abstractions.xml",
+        "lib/dnxcore50/Microsoft.Framework.Runtime.Roslyn.Abstractions.dll",
+        "lib/dnxcore50/Microsoft.Framework.Runtime.Roslyn.Abstractions.xml",
+        "Microsoft.Framework.Runtime.Roslyn.Abstractions.1.0.0-beta5.nupkg",
+        "Microsoft.Framework.Runtime.Roslyn.Abstractions.1.0.0-beta5.nupkg.sha512",
+        "Microsoft.Framework.Runtime.Roslyn.Abstractions.nuspec"
       ]
     },
     "Microsoft.Net.Http.Headers/1.0.0-rc1-final": {
@@ -7434,7 +8765,9 @@
       "Microsoft.AspNet.StaticFiles >= 1.0.0-rc1-final",
       "Microsoft.AspNet.Tooling.Razor >= 1.0.0-rc1-final",
       "System.Linq >= 4.0.1-beta-23516",
-      "TemplateBuilder >= 1.1.4"
+      "TemplateBuilder >= 1.1.4",
+      "Microsoft.Framework.CodeGenerators.Mvc >= 1.0.0-beta5",
+      "Microsoft.Extensions.CodeGenerators.Mvc >= 1.0.0-rc1-final"
     ],
     "DNX,Version=v4.5.1": [
       "Moq >= 4.2.1510.2205"

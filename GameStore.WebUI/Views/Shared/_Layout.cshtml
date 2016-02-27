@@ -5,18 +5,31 @@
     <meta name="viewport" content="width=device-width" />
     <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
     <link href="~/lib/bootstrap/dist/css/bootstrap-theme.css" rel="stylesheet"/>
+    <link href="~/app/css/ErrorStyles.css" rel="stylesheet" />
     <title>@ViewBag.Title</title>
+    <style>
+
+        .navbar-right{
+            float:right !important;
+            margin-right:15px;
+            margin-left:15px;
+        }
+    </style>
 </head>
 <body>
     <div class="navbar navbar-inverse" role="navigation">
-        <a class="navbar-brand" href="#">GameStore</a>
+        <a class="navbar-brand" href="#">
+        <span class="hidden-xs"> GameStore-магазин игр</span>
+            <div class="visible-xs">Game</div>
+            <div class="visible-xs">Store</div>
+        </a>
         @Component.Invoke("Summary")
     </div>
     <div class="row panel">
-        <div id="categories" class="col-xs-3">
+        <div id="categories" class="col-sm-3 col-xs-12">
           @Component.Invoke("Nav")
         </div>
-        <div id="categories" class="col-xs-8">
+        <div id="categories" class="col-xs-12 col-sm-8">
             @RenderBody()
         </div>
     </div>

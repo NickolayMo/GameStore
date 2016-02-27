@@ -1,6 +1,7 @@
 ﻿using GameStore.WebUI.Ifrastructure.Binders;
 using GameStore.WebUI.Models.Abstract;
 using GameStore.WebUI.Models.Concrete;
+using GameStore.WebUI.Models.Entities;
 using Microsoft.AspNet.Builder;
 using Microsoft.AspNet.Diagnostics;
 using Microsoft.AspNet.Hosting;
@@ -35,6 +36,7 @@ namespace GameStore.WebUI
             services.AddSession();
            
             services.AddScoped<IGameRepository, EfGameRepository>();
+            services.AddScoped<IOrderProcessor, EmailOrderProcessor>();
             services.AddEntityFramework()
                 .AddSqlServer()
                 .AddDbContext<EfDbContext>();

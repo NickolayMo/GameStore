@@ -1,5 +1,5 @@
-C:\Users\Николай\documents\visual studio 2015\Projects\GameStore\artifacts\obj\GameStore.WebUI\Debug\GameStore.WebUI.xprojResolveAssemblyReference.cache
 C:\Users\Николай\documents\visual studio 2015\Projects\GameStore\artifacts\bin\GameStore.WebUI\xunit.abstractions.dll
 C:\Users\Николай\documents\visual studio 2015\Projects\GameStore\artifacts\bin\GameStore.WebUI\xunit.runner.visualstudio.testadapter.dll
 C:\Users\Николай\documents\visual studio 2015\Projects\GameStore\artifacts\bin\GameStore.WebUI\xunit.runner.utility.desktop.dll
 C:\Users\Николай\documents\visual studio 2015\Projects\GameStore\artifacts\bin\GameStore.WebUI\xunit.execution.desktop.dll
+C:\Users\Николай\Documents\Visual Studio 2015\Projects\GameStore\artifacts\obj\GameStore.WebUI\Debug\GameStore.WebUI.xprojResolveAssemblyReference.cache

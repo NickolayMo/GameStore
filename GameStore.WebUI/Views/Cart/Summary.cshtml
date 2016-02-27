@@ -3,12 +3,20 @@
 *@
 @model GameStore.WebUI.Models.Entities.Cart
 
-<div class="navbar-right">
+<div class="navbar-right hidden-xs">
     <a asp-action="Index" 
        asp-controller="Cart" 
        asp-route-returnUrl="@ViewContext.HttpContext.Request.Path"
        class="btn btn-default navbar-btn">
         Заказать
+    </a>
+</div>
+<div class="navbar-right visible-xs">
+    <a asp-action="Index"
+       asp-controller="Cart"
+       asp-route-returnUrl="@ViewContext.HttpContext.Request.Path"
+       class="btn btn-default navbar-btn">
+        <i class="fa fa-shopping-cart"></i>
     </a>
 </div>
 <div class="navbar-text navbar-right">
