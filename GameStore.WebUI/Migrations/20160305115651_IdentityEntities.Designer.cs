@@ -8,9 +8,10 @@ using GameStore.WebUI.Models.Concrete;
 namespace GameStore.WebUI.Migrations
 {
     [DbContext(typeof(EfDbContext))]
-    partial class EfDbContextModelSnapshot : ModelSnapshot
+    [Migration("20160305115651_IdentityEntities")]
+    partial class IdentityEntities
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "7.0.0-rc1-16348")
@@ -74,10 +75,6 @@ namespace GameStore.WebUI.Migrations
 
                     b.Property<string>("Description")
                         .IsRequired();
-
-                    b.Property<byte[]>("ImageData");
-
-                    b.Property<string>("MimeType");
 
                     b.Property<string>("Name")
                         .IsRequired();

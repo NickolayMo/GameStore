@@ -1,0 +1,52 @@
+﻿
+@model GameStore.WebUI.ModelViews.LoginViewModel
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<form asp-action="Login" asp-controller="Auth">
+<div class="form-horizontal">
+
+    <hr />
+
+    <div asp-validation-summary="ValidationSummary.ModelOnly" class="text-danger"></div>
+    <div class="form-group">
+        <label asp-for="Login" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input asp-for="Login" class="form-control" />
+            <span asp-validation-for="Login" class="text-danger" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label asp-for="Password" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input asp-for="Password" class="form-control" />
+            <span asp-validation-for="Password" class="text-danger" />
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Войти" class="btn btn-primary" />
+            <a asp-route="Start" class="btn btn-default">Вернутся на главную</a>
+        </div>
+    </div>
+</div>
+</form>
+@section Scripts{
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/lib/jquery.validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/Microsoft.jQuery.Unobtrusive.Validation/jquery.validate.unobtrusive.js"></script>
+    <script>
+    $.validator.methods.range = function (value, element, param) {
+        var globalizedValue = value.replace(",", ".");
+        return this.optional(element) || (globalizedValue >= param[0] && globalizedValue <= param[1]);
+    }
+
+    $.validator.methods.number = function (value, element) {
+        return this.optional(element) || /^-?(?:\d+|\d{1,3}(?:[\s\.,]\d{3})+)(?:[\.,]\d+)?$/.test(value);
+    }
+    </script>
+}
+
+

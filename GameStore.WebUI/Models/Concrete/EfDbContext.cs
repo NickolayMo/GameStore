@@ -1,10 +1,12 @@
 ﻿using GameStore.WebUI.Models.Entities;
 using GameStore.WebUI;
 using Microsoft.Data.Entity;
+using Microsoft.AspNet.Identity.EntityFramework;
+using GameStore.WebUI.Models.Concrete;
 
 namespace GameStore.WebUI.Models.Concrete
 {
-    public class EfDbContext:DbContext
+    public class EfDbContext: IdentityDbContext<AdminUser>
     {
         public EfDbContext()
         {
@@ -14,10 +16,13 @@ namespace GameStore.WebUI.Models.Concrete
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            
             var connectionString = Startup.Configuration["Data:DefaultConnection:ConnectionString"];
             optionsBuilder.UseSqlServer(connectionString);
             base.OnConfiguring(optionsBuilder);
         }
+
+        public DbSet<AdminUser> AdminUser { get; set; }
 
     }
 }
