@@ -42,7 +42,10 @@ namespace GameStore.WebUI.Controllers
             if(game != null)
             {               
                 cart.RemoveLine(game);
-                CartModelBinder.SetUpCart(cart, HttpContext.Session);
+                if (HttpContext != null)
+                {
+                    CartModelBinder.SetUpCart(cart, HttpContext.Session);
+                }                
 
             }
             return RedirectToAction("Index", new { returnUrl });
@@ -78,10 +81,13 @@ namespace GameStore.WebUI.Controllers
 
             }
             if (ModelState.IsValid)
-            {
+            {                
                 _processor.ProcessOrder(cart, shippingDetails);
                 cart.Clear();
-                CartModelBinder.SetUpCart(cart, HttpContext.Session);
+                if (HttpContext != null)
+                {
+                    CartModelBinder.SetUpCart(cart, HttpContext.Session);
+                }                
                 return View("Completed");
             }
             else

@@ -3,13 +3,20 @@ using GameStore.WebUI.Models.Abstract;
 using GameStore.WebUI.Models.Concrete;
 using GameStore.WebUI.Models.Entities;
 using Microsoft.AspNet.Builder;
-using Microsoft.AspNet.Diagnostics;
 using Microsoft.AspNet.Hosting;
-using Microsoft.Data.Entity;
+using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNet.Authentication;
+using Microsoft.AspNet.Authentication.Cookies;
+using Microsoft.AspNet.Http;
+using System;
+
+using Microsoft.Extensions.Logging;
 
 
+
+//using Microsoft.Extensions.DependencyInjection;
 
 namespace GameStore.WebUI
 {
@@ -29,14 +36,24 @@ namespace GameStore.WebUI
         // For more information on how to configure your application, visit http://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+          
             services.AddMvc(
                 options=>options.ModelBinders.Insert(0,new CartModelBinder())
                 );
             services.AddCaching();
             services.AddSession();
-           
+            services.AddLogging();
+            services.AddIdentity<AdminUser, IdentityRole>(
+                config =>
+                {
+                    config.Password.RequiredLength = 2;
+                }
+                ).AddEntityFrameworkStores<EfDbContext>();
+          
+          
             services.AddScoped<IGameRepository, EfGameRepository>();
             services.AddScoped<IOrderProcessor, EmailOrderProcessor>();
+            services.AddTransient<GameStoreSeedData>();
             services.AddEntityFramework()
                 .AddSqlServer()
                 .AddDbContext<EfDbContext>();
@@ -50,11 +67,27 @@ namespace GameStore.WebUI
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app)
+        public async void Configure(IApplicationBuilder app, GameStoreSeedData seeder, ILoggerFactory loggerFactory)
         {
+
+            loggerFactory.AddConsole(Configuration.GetSection("Logging"));
+            loggerFactory.AddDebug();
+            app.UseBrowserLink();
             app.UseDeveloperExceptionPage();
+            app.UseDatabaseErrorPage();
             app.UseStaticFiles();
+
+            
+
+            app.UseIdentity();
             app.UseSession();
+            app.UseCookieAuthentication(options =>
+            {
+                options.AuthenticationScheme = "Cookies";
+                options.LoginPath = new PathString("/Auth/Login");
+               options.AutomaticChallenge = true;
+                
+            });
             app.UseMvc(
                 routes =>
                 {
@@ -101,7 +134,6 @@ namespace GameStore.WebUI
                       },
                      constraints: new {page=@"\d+" }
                      );
-
                     routes.MapRoute(
                         name: "default",
                         template: "{controller}/{action}/{id?}",
@@ -110,6 +142,12 @@ namespace GameStore.WebUI
                         );
                     
                 });
+            
+           
+            await seeder.EnsureSeedDataAsync();
+           
+            
+          
 
         }
 
