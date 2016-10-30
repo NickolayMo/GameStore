@@ -81,7 +81,7 @@ namespace GameStore.WebUI.Controllers
 
             }
             if (ModelState.IsValid)
-            {
+            {                
                 _processor.ProcessOrder(cart, shippingDetails);
                 cart.Clear();
                 if (HttpContext != null)
